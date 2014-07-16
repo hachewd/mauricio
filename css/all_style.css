@@ -1,0 +1,233 @@
+body{
+	/*background: rgba(64,64,65,1);*/
+}
+header[role="top"]{
+	background: rgba(255,255,255,0.9);
+	/*box-shadow: 5px 5px 10px rgba(0,0,0,0.2);*/
+	width: 100%;
+}
+figure.logo{
+	display: inline-block;
+	padding: 5px;
+	margin: 0 auto;
+}
+figure.logo img{
+	width: 100%;
+}
+.content{
+	margin: 0 auto;
+	position: relative;
+}
+.menu-trigger{
+	display: block;
+	left: 25px;
+	height: 50px;
+	position: absolute;
+	width:50px;
+	top: 25px;
+}
+header[role="top"] aside{
+	color:#3a3a3c;
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	margin-left:25%;
+	margin-top: 15px;
+}
+.menu ul{
+	margin:0;
+	padding:0;
+}
+.menu li{
+	display: inline-block;
+	color:#404041;
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 1.1em;
+	padding: 0 5px;
+}
+.menu li a{
+	border-radius: 5px;
+	display: block;
+	color:#404041;
+	background: transparent;
+	padding: 5px 10px;
+	transition:background 0.5s ease-in;
+}
+.menu li a:hover, .menu li a:focus, .menu li a:active{
+	color:#fff;
+	background: #15a7ba;
+}
+footer{
+	color:#b2b2b8;
+	background: rgba(32,32,32,0.9);
+	bottom:0;
+	height: 30px;
+	overflow: hidden;
+	padding: 5px 10px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+}
+.rights, .socialmedia{
+	display:inline-block;
+	vertical-align: top;
+}
+.rights{
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-size: 0.8em;
+	margin-right: 20px;
+}
+.socialmedia a{
+	padding: 0 2px;
+}
+.description{
+	padding-top: 3em;
+	text-align: justify;
+}
+.description header h1, .description header h2{
+	font-family: 'Roboto Regular', sans-serif;
+	font-style: normal;
+	padding: 0;
+	margin:0;
+}
+.description header h1{
+	color:#4a4f55;
+	font-size: 2em;
+	
+}
+.indText{
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px 10px 0 0;
+}
+.description header h2{
+	color:#a3aaae;
+	font-size: 1.5em;
+}
+.description header{
+	border-bottom: dotted 1px rgba(0,0,0,0.4);
+	margin-bottom:15px;
+	padding-bottom:10px; 
+}
+.description p{
+	color: #939a90;
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-size: 1em;
+	line-height: 26px;
+}
+.galerias{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.galerias li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 2px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 280px) and (max-width: 640px) {
+	header[role="top"]{
+		position: relative;
+		z-index: 10;
+	}
+	figure.logo{
+		display: block;
+		margin: 10px auto;
+		width:60%;
+	}
+	.content{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.menu{
+		display: block;
+		margin: 10px auto;
+	}
+
+	.menu li{
+		display: block;
+		text-align: center;
+	}
+	.galerias li{
+		width: 30%;
+	}
+	.galerias li img{
+		width: 100%;
+	}
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+	.content{
+		margin: 0 auto;
+		width: 95%;
+	}
+	figure.logo{
+		display: block;
+		margin: 10px auto;
+		width:50%;
+	}
+	.menu ul{
+		text-align: center;
+	}
+	.menu{
+		display: block;
+		margin-top: 15px;
+		margin-left: 5%;
+	}
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 801px) and (max-width: 1280px) {
+	.content{
+		width: 95%; 
+	}
+	.contenido{
+		padding-top: 90px;
+	}
+	header[role="top"]{
+		height: 90px;
+		position: fixed;
+		z-index: 10;
+	}
+	figure.logo{
+		left: 10%;
+		width:30%;
+	}
+	.menu{
+		display: inline-block;
+		margin-top: 30px;
+		margin-left: 5%;
+	}
+}
+@media only screen and (min-width: 1280px){
+	.content{
+		width: 70%; 
+	}
+	.contenido{
+		padding-top: 90px;
+	}
+	header[role="top"]{
+		height: 100px;
+		position: fixed;
+		z-index: 10;
+	}
+	figure.logo{
+		left: 1%;
+		width:25%;
+	}
+	.menu{
+		display: inline-block;
+		margin-top: 30px;
+		margin-left: 5%;
+	}
+	.galerias{
+		display: inline-block;
+		width: 60%
+	}
+	.description{
+		display: inline-block;
+		padding-right: 5%;
+		vertical-align: top;
+		width: 30%;
+	}
+}
