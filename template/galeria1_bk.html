@@ -1,0 +1,31 @@
+
+<section role="galerias" ng-controller="galeriaController as galeriaControl">
+	<article class="description">
+    	<header>
+    		<h1><div class="indText icon-camera"></div>{{galeriaControl.galerias[0].title}}
+    		</h1>
+    		<h2>{{galeriaControl.galerias[0].subtitle}}</h2>
+    	</header>
+    	<p>{{galeriaControl.galerias[0].description}}
+    		</p>
+    </article>
+	<div class="galerias">
+		<img ng-src="{{galeriaControl.galerias[0].images[0].thumb}}" class="myphotos" rel="group1" data-glisse-big="{{galeriaControl.galerias[0].images[0].full}}" title="Aenean commodo ligula eget dolor" />
+		{{galeriaControl.galerias[0].images}}
+		 <ul>
+		    <li ng-repeat="image in galeriaControl.galerias[0].images">
+		    	<img src="{{image.thumb}}" class="myphotos" rel="group1" data-glisse-big="{{image.full}}" title="Aenean commodo ligula eget dolor" />
+		    </li>
+		    <!--<li><img src="images/galleries/small-2.png" class="myphotos" rel="group1" data-glisse-big="images/galleries/big-2.jpg" title="Consectetuer adipiscing elit" /></li>
+		    <li><img src="images/galleries/small-3.png" class="myphotos" rel="group1" data-glisse-big="images/galleries/big-3.jpg" title="Aenean massa" /></li>
+		    <li><img src="images/galleries/small-4.png" class="myphotos" rel="group1" data-glisse-big="images/galleries/big-4.jpg" title="Lorem ipsum dolor sit amet" /></li>
+		    <li><img src="images/galleries/small-5.png" class="myphotos" rel="group1" data-glisse-big="images/galleries/big-5.jpg" title="Dis parturient montes" /></li>-->
+		</ul>
+	</div>
+	
+</section>
+<script>
+	$(function () {
+	    $('.myphotos').glisse({speed: 500, changeSpeed: 550, effect:'fade', fullscreen: false, disablindRightClick:false}); 
+	});
+</script>

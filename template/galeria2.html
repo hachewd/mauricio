@@ -1,0 +1,23 @@
+
+<section role="galerias" ng-controller="galeriaCtrl as galeria">
+	<div>
+		<article class="description">
+	    	<header>
+	    		<h1><div class="indText icon-camera"></div>{{galeria.galerias[1].title}} 
+	    		</h1>
+	    		<h2>{{galeria.galerias[1].subtitle}} </h2>
+	    	</header>
+	    	<p>{{galeria.galerias[1].description}}
+	    		</p>
+	    </article>
+		<div class="galerias">
+			 <ul>
+			     <li ng-repeat="image in galeria.galerias[1].images">
+			    	<a class="fancybox" rel="group" href="{{image}}"><img ng-src="{{image}}" class="group1"/></a>
+			    </li>
+			  
+			</ul>
+		</div>
+	</div>
+</section>
+
